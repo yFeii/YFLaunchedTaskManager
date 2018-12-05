@@ -22,7 +22,7 @@ pod 'YFLaunchedTaskManager'
 
 ## Author
 
-yFeii, 15524589871@163.com
+yFeii
 
 ## License
 
