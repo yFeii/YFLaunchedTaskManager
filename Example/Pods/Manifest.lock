@@ -17,19 +17,15 @@ DEPENDENCIES:
   - Expecta+Snapshots
   - FBSnapshotTestCase
   - Specta
-  - YFLaunchedTaskManager (from `../`)
-
-EXTERNAL SOURCES:
-  YFLaunchedTaskManager:
-    :path: ../
+  - YFLaunchedTaskManager
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  YFLaunchedTaskManager: a3c724bbe00fc956f2225379dd7c4af2f63edac9
+  YFLaunchedTaskManager: e2fac3483bed76eb73cf75fb0d55800a9d05f21b
 
-PODFILE CHECKSUM: 063dad5044aa5c3c0de86979be52cbed0f820846
+PODFILE CHECKSUM: c1f0da51a5718d0c27f899f099ac861e17f6ff9e
 
 COCOAPODS: 1.4.0

@@ -23,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		876370DA525D4ED1A37490D6 /* Pods_YFLaunchedTaskManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C64304117472133639AB1D /* Pods_YFLaunchedTaskManager_Tests.framework */; };
 		B2D2D80821B7BDDD001DF03F /* YFTaskOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D2D80721B7BDDD001DF03F /* YFTaskOne.m */; };
 /* End PBXBuildFile section */
 
@@ -59,9 +58,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7524EB8555F6FB824D18B775 /* Pods-YFLaunchedTaskManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLaunchedTaskManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YFLaunchedTaskManager_Tests/Pods-YFLaunchedTaskManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		882C7F8744DF691691A7904A /* Pods-YFLaunchedTaskManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLaunchedTaskManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YFLaunchedTaskManager_Tests/Pods-YFLaunchedTaskManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		93C4AF6C59BBFD0E4B89C10D /* Pods-YFLaunchedTaskManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLaunchedTaskManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YFLaunchedTaskManager_Example/Pods-YFLaunchedTaskManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B2D2D80621B7BDDD001DF03F /* YFTaskOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFTaskOne.h; sourceTree = "<group>"; };
 		B2D2D80721B7BDDD001DF03F /* YFTaskOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFTaskOne.m; sourceTree = "<group>"; };
@@ -91,7 +88,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				876370DA525D4ED1A37490D6 /* Pods_YFLaunchedTaskManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +191,6 @@
 			children = (
 				E58BDC146F039381D118C763 /* Pods-YFLaunchedTaskManager_Example.debug.xcconfig */,
 				93C4AF6C59BBFD0E4B89C10D /* Pods-YFLaunchedTaskManager_Example.release.xcconfig */,
-				7524EB8555F6FB824D18B775 /* Pods-YFLaunchedTaskManager_Tests.debug.xcconfig */,
-				882C7F8744DF691691A7904A /* Pods-YFLaunchedTaskManager_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -228,12 +222,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "YFLaunchedTaskManager_Tests" */;
 			buildPhases = (
-				0AB72AF2A5C32E5D84EE23DE /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				FA4E8D0E2D44B834CAFF3073 /* [CP] Embed Pods Frameworks */,
-				81E1BA7FB413F17D7076B440 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,24 +293,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AB72AF2A5C32E5D84EE23DE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YFLaunchedTaskManager_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7881FE61EEA17E4A7E6A66A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,21 +309,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81E1BA7FB413F17D7076B440 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Tests/Pods-YFLaunchedTaskManager_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B305613408A3795221CE6095 /* [CP] Copy Pods Resources */ = {
@@ -375,28 +333,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Example/Pods-YFLaunchedTaskManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YFLaunchedTaskManager/YFLaunchedTaskManager.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YFLaunchedTaskManager.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Example/Pods-YFLaunchedTaskManager_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA4E8D0E2D44B834CAFF3073 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Tests/Pods-YFLaunchedTaskManager_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
 				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+				"${BUILT_PRODUCTS_DIR}/YFLaunchedTaskManager/YFLaunchedTaskManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -404,10 +345,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YFLaunchedTaskManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Tests/Pods-YFLaunchedTaskManager_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFLaunchedTaskManager_Example/Pods-YFLaunchedTaskManager_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -575,7 +517,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7524EB8555F6FB824D18B775 /* Pods-YFLaunchedTaskManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -599,7 +540,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 882C7F8744DF691691A7904A /* Pods-YFLaunchedTaskManager_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

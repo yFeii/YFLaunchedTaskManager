@@ -41,8 +41,8 @@ static YFLaunchedTaskManager *launchManager = nil;
         Class class = NSClassFromString(className);
         id <YFLaunchedTaskProtocol>task = [[class alloc] init];
         if ([task respondsToSelector:@selector(launchedTaskWithApplication:options:)]) {
-            id <YFLaunchedTaskProtocol>taskInstance = [task launchedTask];
-            [self.taskModules addObject:taskInstance];
+            
+            [self.taskModules addObject:task];
         }
     }
 }
