@@ -1,6 +1,0 @@
-framework module YFLaunchedTaskManager {
-  umbrella header "YFLaunchedTaskManager-umbrella.h"
-
-  export *
-  module * { export * }
-}
